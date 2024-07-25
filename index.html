@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Burgera is a demo template for a burger restaurant website, showcasing modern design using HTML5, CSS3, TailwindCSS, and JavaScript. Discover the ultimate beauty and functionality of our responsive and stylish template."
+        />
+        <meta name="author" content="Abdullah AL Mahmud">
+        <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="images/favicon.png"
+            type="image/x-icon"
+        />
+        <!--=============== REMIXICONS ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        />
+        <!--=============== Animate.css ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!--============== TailwindCSS and Main CSS=============  -->
+        <link rel="stylesheet" href="CSS/style.min.css" />
+        <link rel="stylesheet" href="CSS/tailwind.css" />
+        <title>Burgera</title>
+    </head>
+    <body class="font-montserrat bg-bodyColor overflow-x-hidden">
+        <!-- Header Starts From Here -->
+        <div class="xl:min-h-screen">
+            <header
+                class="flex justify-between items-center p-4 fixed top-0 left-0 w-screen h-auto z-[2000] bg-bodyColor header xl:px-32 xl:py-6"
+            >
+                <div class="flex justify-center items-center gap-2 relative">
+                    <a href="index.html">
+                        <img
+                            src="images/favicon.png"
+                            alt="image of the website logo"
+                            class="w-10 h-auto"
+                        />
+                    </a>
+                    <a href="index.html">
+                        <span class="font-aclonica text-lg">Burgera</span>
+                    </a>
+                </div>
+                <div>
+                    <i
+                        class="ri-apps-2-fill cursor-pointer text-xl absolute top-5 right-4 block z-[4000] lg:hidden"
+                        id="menu"
+                    ></i>
+                </div>
+                <div>
+                    <nav
+                        class="fixed top-0 left-0 z-[3000] bg-bodyColoralt min-w-full px-10 py-14 hidden shadow-big-img lg:z-0 lg:px-0 lg:py-0 lg:block lg:bg-inherit lg:relative lg:shadow-none"
+                        id="nav"
+                    >
+                        <ul
+                            class="font-aclonica flex justify-center items-center flex-col gap-4 nav-menu lg:flex-row lg:gap-10"
+                        >
+                            <li>
+                                <a
+                                    href="#home"
+                                    class="hover:underline hover:underline-offset-8 hover:decoration-firstColor hover:decoration-2 pb-1"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#recipe"
+                                    class="hover:underline hover:underline-offset-8 hover:decoration-firstColor hover:decoration-2 pb-1"
+                                    >Recipe</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#popular"
+                                    class="hover:underline hover:underline-offset-8 hover:decoration-firstColor hover:decoration-2 pb-1"
+                                    >Popular</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#delivery"
+                                    class="hover:underline hover:underline-offset-8 hover:decoration-firstColor hover:decoration-2 pb-1"
+                                    >Delivery</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="hover:underline hover:underline-offset-8 hover:decoration-firstColor hover:decoration-2 pb-1"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- Hero Area Starts From Here -->
+            <section class="py-8 px-5 mt-16 scroll-m-16" id="home">
+                <div
+                    class="flex justify-center items-center flex-col gap-10 relative xl:grid xl:grid-cols-[430px_650px] xl:justify-between xl:items-center xl:h-[calc(100%-88px)] xl:pl-32 xl:mt-14 xl:gap-0"
+                >
+                    <div
+                        class="flex justify-center items-center flex-col home-content l-home-content xl:items-start"
+                    >
+                        <h2
+                            class="font-aclonica text-4xl text-center xl:text-6xl xl:text-left"
+                        >
+                            Love Every<br />Burger
+                        </h2>
+                        <p
+                            class="text-center text-titleColor my-7 text-sm leading-6 bigMb:text-base md:max-w-[300px] md:leading-6 md:text-sm xl:text-base xl:text-left xl:max-w-[350px]"
+                        >
+                            We serve the best burgers on the planet, paving the
+                            way for cooking and preparing hot, delicious
+                            burgers.
+                        </p>
+                        <button
+                            class="font-aclonica bg-firstColor px-4 py-3 rounded-full hover:shadow-small-img ease-in-out"
+                        >
+                            Bite Now
+                        </button>
+                        <img
+                            src="images/sticker-potatoes.svg"
+                            alt="image of the french fries"
+                            class="w-10 h-auto absolute right-5 top-48 rotate-[15deg] opacity-80 xl:left-[300px] xl:top-[350px] xl:w-12"
+                        />
+                    </div>
+                    <div
+                        class="px-8 xl:px-0 xl:w-auto home-banner flex items-center r-home-banner"
+                    >
+                        <img
+                            src="images/burger.png"
+                            alt="image of the home-burger"
+                            class="min-w-[275px]"
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Recipe Section Starts From Here -->
+        <section class="py-12 px-5 bg-bodyColoralt scroll-m-16" id="recipe">
+            <h1 class="text-2xl font-aclonica text-center">
+                Our Secret Recipe
+            </h1>
+            <div
+                class="flex justify-center items-center flex-col gap-10 md:flex-row md:my-12"
+            >
+                <div
+                    class="w-screen h-auto flex justify-center items-center my-5 md:max-w-[325px]"
+                >
+                    <img
+                        src="images/recipe-burger.png"
+                        alt="image of the recipe"
+                        class="w-[50%] max-w-[215px] xl:w-[70%] recipe-img cursor-pointer l-recipe-img"
+                    />
+                </div>
+                <div
+                    class="flex justify-center items-center gap-3 flex-col recipe-data md:mr-9 r-recipe-data"
+                >
+                    <div class="flex justify-center items-center gap-3 w-full">
+                        <div
+                            class="w-[95px] h-[70px] bg-firstColorAlt p-4 rounded-lg flex items-center justify-center"
+                        >
+                            <img
+                                src="images/recipe-bread.png"
+                                alt="image of bread"
+                                class="w-full h-auto"
+                            />
+                        </div>
+                        <div class="w-[80%]">
+                            <h3 class="font-aclonica xl:text-lg">Bread</h3>
+                            <p class="text-sm text-textColor xl:text-base">
+                                Fresh bread, baked to perfection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 w-full">
+                        <div class="w-[80%]">
+                            <h3 class="font-aclonica xl:text-lg">Cheese</h3>
+                            <p class="text-sm text-textColor xl:text-base">
+                                Cheese for a fantastic and healthy future.
+                            </p>
+                        </div>
+                        <div
+                            class="w-[95px] h-[70px] bg-firstColorAlt p-4 rounded-lg flex items-center justify-center"
+                        >
+                            <img
+                                src="images/recipe-cheese.png"
+                                alt="image of cheese"
+                                class="w-full h-auto"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 w-full">
+                        <div
+                            class="w-[95px] h-[70px] bg-firstColorAlt p-4 rounded-lg flex items-center justify-center"
+                        >
+                            <img
+                                src="images/recipe-meat.png"
+                                alt="image of meat"
+                                class="w-full h-auto"
+                            />
+                        </div>
+                        <div class="w-[80%]">
+                            <h3 class="font-aclonica xl:text-lg">Meat</h3>
+                            <p class="text-sm text-textColor xl:text-base">
+                                100% pure beef, big and meaty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 w-full">
+                        <div class="w-[80%]">
+                            <h3 class="font-aclonica xl:text-lg">Vegetables</h3>
+                            <p class="text-sm text-textColor xl:text-base">
+                                Vegetables full of the essence of nature and
+                                organic.
+                            </p>
+                        </div>
+                        <div
+                            class="w-[95px] h-[70px] bg-firstColorAlt p-4 rounded-lg flex items-center justify-center"
+                        >
+                            <img
+                                src="images/recipe-vegetable.png"
+                                alt="image of vegetable"
+                                class="w-full h-auto"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 w-full">
+                        <div
+                            class="w-[95px] h-[70px] bg-firstColorAlt p-4 rounded-lg flex items-center justify-center"
+                        >
+                            <img
+                                src="images/recipe-sauces.png"
+                                alt="image of sauces"
+                                class="w-full h-auto"
+                            />
+                        </div>
+                        <div class="w-[80%]">
+                            <h3 class="font-aclonica xl:text-lg">Sauces</h3>
+                            <p class="text-sm text-textColor xl:text-base">
+                                Fresh sauces, delicious for the palate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Section Starts Frtom Here -->
+        <section class="px-3 py-12 scroll-m-16 lg:py-12" id="popular">
+            <h1 class="font-aclonica text-2xl text-center">
+                Most Devoured Burgers
+            </h1>
+            <div
+                class="grid grid-cols-2 justify-center items-center gap-10 bigMb:max-w-[425px] md:max-w-[768px] md:grid-cols-3 lg:max-w-[1280px] lg:grid-cols-4 lg:px-16 xl:max-w-[1440px] xl:grid-cols-4 mx-auto my-20"
+            >
+                <div
+                    class="bg-firstColorAlt rounded-md p-3 flex flex-col border-4 border-solid border-white pt-20 relative popular-card famous-card bigMb:pt-28 bigMb:max-w-[180px] mediumMb:pt-24 md:max-w-[200px] lg:max-w-[350px] popular-img cursor-pointer"
+                >
+                    <img
+                        src="images/popular-burger-chicken.png"
+                        alt="image of burgers"
+                        class="max-w-[90%] m-auto absolute top-[-2.5rem] bigMb:w-[75%] bigMb:max-w-[145px] md:w-[75%]"
+                    />
+                    <p class="font-aclonica">Chicken<br />Burger</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-aclonica text-lg">$6</p>
+                        <div
+                            class="bg-black px-[8px] py-1 rounded-md inline-block"
+                        >
+                            <i
+                                class="ri-shopping-bag-3-fill text-white text-lg"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-firstColorAlt rounded-md p-3 flex flex-col border-4 border-solid border-white pt-20 relative popular-card famous-card bigMb:pt-28 bigMb:max-w-[180px] mediumMb:pt-24 md:max-w-[200px] lg:max-w-[350px] popular-img cursor-pointer"
+                >
+                    <img
+                        src="images/popular-burger-meat.png"
+                        alt="image of burgers"
+                        class="w-[90%] m-auto absolute top-[-2.5rem] bigMb:w-[75%] bigMb:max-w-[145px] md:w-[75%]"
+                    />
+                    <p class="font-aclonica">Meat<br />Burger</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-aclonica text-lg">$10</p>
+                        <div
+                            class="bg-black px-[8px] py-1 rounded-md inline-block"
+                        >
+                            <i
+                                class="ri-shopping-bag-3-fill text-white text-lg"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-firstColorAlt rounded-md p-3 flex flex-col border-4 border-solid border-white pt-20 relative popular-card famous-card bigMb:pt-28 bigMb:max-w-[180px] mediumMb:pt-24 md:max-w-[200px] lg:max-w-[350px] popular-img cursor-pointer"
+                >
+                    <img
+                        src="images/popular-burger-grill.png"
+                        alt="image of burgers"
+                        class="w-[90%] m-auto absolute top-[-2.5rem] cursor-pointer bigMb:w-[75%] bigMb:max-w-[145px] md:w-[75%]"
+                    />
+                    <p class="font-aclonica">Grill<br />Burger</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-aclonica text-lg">$12</p>
+                        <div
+                            class="bg-black px-[8px] py-1 rounded-md inline-block"
+                        >
+                            <i
+                                class="ri-shopping-bag-3-fill text-white text-lg"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-firstColorAlt rounded-md p-3 flex flex-col border-4 border-solid border-white pt-20 relative popular-card famous-card bigMb:pt-28 bigMb:max-w-[180px] mediumMb:pt-24 md:max-w-[200px] lg:max-w-[350px] popular-img cursor-pointer"
+                >
+                    <img
+                        src="images/popular-burger-classic.png"
+                        alt="image of burgers"
+                        class="w-[90%] m-auto absolute top-[-2.5rem] cursor-pointer bigMb:w-[75%] bigMb:max-w-[145px] md:w-[75%]"
+                    />
+                    <p class="font-aclonica">Classic<br />Burger</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-aclonica text-lg">$8</p>
+                        <div
+                            class="bg-black px-[8px] py-1 rounded-md inline-block"
+                        >
+                            <i
+                                class="ri-shopping-bag-3-fill text-white text-lg"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-firstColorAlt rounded-md p-3 flex flex-col border-4 border-solid border-white pt-20 relative popular-card famous-card bigMb:pt-28 bigMb:max-w-[180px] mediumMb:pt-24 md:max-w-[200px] lg:max-w-[350px] popular-img cursor-pointer"
+                >
+                    <img
+                        src="images/popular-burger-big.png"
+                        alt="image of burgers"
+                        class="w-[90%] m-auto absolute top-[-2.5rem] bigMb:w-[75%] bigMb:max-w-[145px] md:w-[75%]"
+                    />
+                    <p class="font-aclonica">Big<br />Burger</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-aclonica text-lg">$15</p>
+                        <div
+                            class="bg-black px-[8px] py-1 rounded-md inline-block"
+                        >
+                            <i
+                                class="ri-shopping-bag-3-fill text-white text-lg"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Delivery Section Starts From Here -->
+        <section class="px-3 py-12 bg-bodyColoralt scroll-m-16" id="delivery">
+            <div
+                class="flex justify-center items-center flex-col gap-10 md:flex-row mx-auto"
+            >
+                <div class="delivery-data l-delivery-data">
+                    <h1 class="font-aclonica text-2xl text-center">
+                        Fast Delivery
+                    </h1>
+                    <p
+                        class="text-textColor text-center my-5 text-sm mediumMb:text-base xl:w-[450px]"
+                    >
+                        Place your order for your favorite burger and we will
+                        deliver it to your door in minutes, get in touch and
+                        don't leave hungry.
+                    </p>
+                    <div class="flex justify-center items-center">
+                        <button
+                            class="font-aclonica bg-firstColor px-4 py-3 rounded-full hover:shadow-small-img ease-in-out mt-3"
+                        >
+                            Contact Now
+                        </button>
+                    </div>
+                </div>
+                <div class="cursor-pointer bigMb:max-w-[405px]">
+                    <img
+                        src="images/delivery-burger.png"
+                        alt="image of the delivery burger"
+                        class="delivery-img r-delivery-img"
+                    />
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section Starts From Here -->
+        <section
+            class="px-3 py-12 scroll-m-20 bg-secondColor rounded-3xl mx-3 mt-8"
+            id="contact"
+        >
+            <h1 class="font-aclonica text-white text-center my-3 lg:text-2xl">
+                Contact Now
+            </h1>
+            <div
+                class="flex flex-col justify-between items-center gap-10 lg:grid lg:grid-cols-2 xl:gap-0"
+            >
+                <div class="lg:order-1">
+                    <div>
+                        <img
+                            src="images/sticker-burger.svg"
+                            alt="image of the sticker burger"
+                            class="w-8 opacity-50 relative left-[-50px] lg:left-[-400px] lg:bottom-10 xl:left-[-550px] xl:bottom-5"
+                        />
+                    </div>
+                    <div class="contact-datav r-contact-data">
+                        <div
+                            class="lg:grid lg:grid-cols-[200px_200px] lg:justify-start lg:items-center lg:gap-1"
+                        >
+                            <div>
+                                <p
+                                    class="font-aclonica my-2 text-white text-center lg:text-left xl:text-xl"
+                                >
+                                    Write Us
+                                </p>
+                                <div
+                                    class="flex justify-center items-center gap-3 lg:justify-start"
+                                >
+                                    <div
+                                        class="bg-firstColor p-2 rounded-lg inline-block"
+                                    >
+                                        <i
+                                            class="ri-whatsapp-fill text-2xl"
+                                        ></i>
+                                    </div>
+                                    <div
+                                        class="bg-firstColor p-2 rounded-lg inline-block"
+                                    >
+                                        <i
+                                            class="ri-facebook-circle-fill text-2xl"
+                                        ></i>
+                                    </div>
+                                    <div
+                                        class="bg-firstColor p-2 rounded-lg inline-block"
+                                    >
+                                        <i
+                                            class="ri-telegram-fill text-2xl"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-center text-white font-aclonica my-5 lg:text-left xl:text-xl"
+                                >
+                                    Call Us and Order
+                                </p>
+                                <span
+                                    class="block text-center text-whiteColor lg:text-left"
+                                    >++00-9787-7654-321</span
+                                >
+                                <span
+                                    class="block text-center text-whiteColor lg:text-left"
+                                    >+11-012345</span
+                                >
+                            </div>
+                        </div>
+                        <div>
+                            <p
+                                class="font-aclonica text-center text-white my-5 lg:text-left xl:text-xl"
+                            >
+                                Find US Here
+                            </p>
+                            <p class="text-center text-whiteColor lg:text-left">
+                                Lima-Sun City-Peru
+                            </p>
+                            <p class="text-center text-whiteColor lg:text-left">
+                                Av. Moon #4321
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative contact-img l-contact-img lg:flex lg:items-center"
+                >
+                    <img
+                        src="images/contact-man.png"
+                        alt="image of the delivery man"
+                        class="md:mx-auto lg:w-[80%] xl:w-[50%] bigMb:max-w-[360px]"
+                    />
+                    <img
+                        src="images/sticker-soda.svg"
+                        alt="image of the soda"
+                        class="w-7 opacity-50 absolute left-56 bottom-48 bigMb:bottom-56 bigMb:left-64 md:left-[500px] lg:relative lg:bottom-0 xl:right-[50px] xl:top-[100px]"
+                    />
+                </div>
+            </div>
+        </section>
+        <!-- Footer Starts From Here -->
+        <footer class="px-3 py-8 relative">
+            <h1 class="font-aclonica text-center text-2xl footer-data">
+                Burgera
+            </h1>
+            <div
+                class="flex justify-between items-center my-5 px-3 footer-data"
+            >
+                <p class="text-titleColor text-sm">Terms & Agreements</p>
+                <p class="text-titleColor text-sm">Privacy Policy</p>
+            </div>
+            <div class="flex justify-center items-center gap-2 footer-data">
+                <div class="bg-firstColor px-2 py-1 rounded-lg">
+                    <i class="ri-facebook-circle-fill text-2xl"></i>
+                </div>
+                <div class="bg-firstColor px-2 py-1 rounded-lg">
+                    <i class="ri-instagram-fill text-2xl"></i>
+                </div>
+                <div class="bg-firstColor px-2 py-1 rounded-lg">
+                    <i class="ri-twitter-x-line text-2xl"></i>
+                </div>
+            </div>
+            <a href="#" id="up" class="hidden fixed right-3 bottom-20"
+                ><i
+                    class="ri-arrow-up-line bg-bodyColor px-3 py-3 shadow-small-img rounded-lg text-lg"
+                ></i
+            ></a>
+            <p
+                class="text-titleColor text-xs mt-14 mb-3 text-center footer-data"
+            >
+                &#169; All Rights Reserved By Abdullah AL Mahmud
+            </p>
+        </footer>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
