@@ -1,0 +1,78 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ============== Basic Tailwind Styles ============ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============== Custom Utilties =============== */
+
+@layer utilities {
+    .shadow-small-img {
+        box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.2);
+    }
+    .shadow-big-img {
+        box-shadow: 0 8px 24px hsla(22, 100%, 8%, 0.2);
+    }
+    .shadow-none {
+        box-shadow: none;
+    }
+    .home-dish {
+        filter: drop-shadow(0 8px 24px hsla(22, 100%, 8%, 0.2));
+    }
+    .home-ingredients {
+        filter: drop-shadow(0 4px 16px hsla(22, 100%, 8%, 0.2));
+    }
+    .recipe-img:hover {
+        animation: pulse 1s;
+    }
+    .popular-img:hover img {
+        animation: bounce 1s;
+    }
+    .delivery-img:hover {
+        animation: heartBeat 1s;
+    }
+}
+
+/* ============= Basic CSS =========== */
+
+::selection{
+    background-color: rgb(241, 194, 131);
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: hsl(34, 16%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0.6rem;
+    background-color: hsl(34, 16%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 0.6rem;
+    background-color: hsl(34, 16%, 55%);
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
+
+/* Active Link */
+.active-link {
+    position: relative;
+}
+.active-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background-color: hsl(45, 99%, 55%);
+}
